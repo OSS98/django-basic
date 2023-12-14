@@ -1,6 +1,6 @@
-from django.http import HttpResponse
-def about(request) :
-    return HttpResponse('about')
+from django.shortcuts import render
 
-def homepage(request):
-    return HttpResponse('homepage')
+def homepage(request) :
+    return render(request,"homepage.html")
+def about(request):
+    return render(request,"about.html")
